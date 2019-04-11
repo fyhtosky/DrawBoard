@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_message">Jos nautit käyttää %1$s, käyttäisitkö hetken arvioidaksesi sen? Se ei vie kuin hetken. Kiitoksia avustasi!</string>
+    <string name="rate_cancel_button_title">Ei kiitos</string>
+    <string name="rate_rate_button_title">Arvioi nyt</string>
+    <string name="again_to_exit_app">Paina BACK-painiketta uudelleen poistuaksesi</string>
+
+    <string name="cancel">Peruuta</string>
+    <string name="rate_message_2">Olemme pieni tiimi, joka työskentelee kovasti tuottaakseen parhaat ilmaiset sovellukset sinulle. Antamasi 5-tähden arvio on tärkeämpi kuin mikään raha maailmassa!</string>
+    <string name="rate_now">Esikatsele nyt</string>
+    <string name="exit">Poistu</string>
+    <string name="feedback">Palaute</string>
+</resources>

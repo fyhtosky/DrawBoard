@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liusheng.painboard">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".Other.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="TUIA_APPKEY"
+            android:value="446S1mhP3vvyJ4jpxMkQxjHLwWBq" />
+        <meta-data
+            android:name="OPPO_CHANNEL"
+            android:value="${OPPO_CHANNEL_VALUE}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 华为平台 手动开屏广告 -->
+        <!-- 注意：华为平台 启动页 打华为包时更换为此启动页 HWSplashActivity -->
+        <!-- 注意：非华为平台                         SplashAdActivity -->
+        <activity
+            android:name=".Activity.HWSplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DrawingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.WorksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ImagePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ColoringTemplateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ColoringActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.DynamicActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity.LearnTemplatePickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LearnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MagicActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+
+        <!-- 华为平台 手动广告落地页 -->
+        <activity
+            android:name=".Activity.AdShowActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 无需添加 PictureSelector 第三方库已包含 -->
+        <!--
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        -->
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_message">אם אתה נהנה להשתמש ב- %1$s, אתה מוכן לקחת רגע כדי לדרג את את התוכנה? זה לא ייקח יותר מדקה. תודה על התמיכה!</string>
+    <string name="rate_cancel_button_title">לא, תודה</string>
+    <string name="rate_rate_button_title">דרג עכשיו</string>
+    <string name="again_to_exit_app">לחצו שוב על הלחצן BACK כדי לצאת</string>
+
+    <string name="cancel">לְבַטֵל</string>
+    <string name="rate_message_2">אנחנו צוות קטן עובד קשה מאוד לתת לך את היישומים הטובים ביותר עבור free.Your 5 כוכבים טובים יותר מכל הכסף בעולם!</string>
+    <string name="rate_now">דרג עכשיו</string>
+    <string name="exit">יְצִיאָה</string>
+    <string name="feedback">מָשׁוֹב</string>
+</resources>

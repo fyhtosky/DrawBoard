@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    productFlavors {
+//        productFlavors.all {
+//            flavor ->
+//                flavor.manifestPlaceholders = [
+//                        TUIA_APP_KEY: "4JtqTFPyzESKzNiznbfV6r3qHASN" //修改为当前应用所使用的推啊app key
+//                ]
+//
+//        }
+//    }
+
+}
+
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+
+        jcenter()
+
+    }
+
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.tuia:sdk:2.2.0'
+    compile project(':CommonLibrarys:ad:ad-adapter')
+}
+

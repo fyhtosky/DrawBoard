@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/rl_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_bg">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/btn_back" />
+
+        <RelativeLayout
+            android:id="@+id/fl_container"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/close">
+
+            <ImageView
+                android:id="@+id/float_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <LinearLayout
+                android:id="@+id/float_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <ImageView
+                android:id="@+id/float_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="3dp"
+                android:src="@drawable/tm_close" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/tm_ad" />
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_undo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="8dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:src="@drawable/chaxiao_icon_selector" />
+
+            <ImageView
+                android:id="@+id/btn_redo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="8dp"
+                android:button="@null"
+                android:src="@drawable/houtui_icon_selector" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/btn_empty"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/rg_layout"
+            android:padding="10dp"
+            android:src="@drawable/btn_qc" />
+
+        <ImageView
+            android:id="@+id/btn_save"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:onClick="saveClick"
+            android:src="@drawable/btn_bc" />
+
+
+    </RelativeLayout>
+
+    <!--绘制区域-->
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.example.liusheng.painboard.View.MyDrawView
+            android:id="@+id/draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white" />
+
+        <com.example.liusheng.painboard.View.TrajectoryView
+            android:id="@+id/trajectoryView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+
+        <View
+            android:id="@+id/v_draw_paint_size"
+            android:background="@drawable/bg_draw_paint_size"
+            android:layout_width="5px"
+            android:layout_height="5px"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        
+        
+        <LinearLayout
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+
+
+            <!--<com.example.liusheng.painboard.View.VerticalSeekBar
+                android:id="@+id/verticalSeekBar"
+                android:thumbTint="#FB003F"
+                android:progress="15"
+                android:max="60"
+                android:progressTint="@android:color/darker_gray"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_width="20dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                />-->
+
+            <com.example.liusheng.painboard.View.VerticalSeekBar
+                android:id="@+id/verticalSeekBar"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                />
+
+            <com.example.liusheng.painboard.View.CustomView
+                android:id="@+id/color_view"
+                android:layout_marginTop="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_fragment_container"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+
+
+    <!--底部工具栏-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/bottom_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="#EC427C"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        />
+
+    <!--广告-->
+    <LinearLayout
+        android:id="@+id/drawing_banner_view"
+        android:layout_below="@+id/bottom_tab_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name" translatable="false">Common</string>
+
+    <string name="skip">Skip</string>
+
+    <!-- 提示评论 -->
+    <string name="again_to_exit_app">Press BACK button again to exit</string>
+    <string name="no_market_install_message">You did not install any market</string>
+
+    <string name="rate_message">If you enjoy using %1$s, would you mind taking a moment to rate it? It won’t take more than a minute. Thanks for your support!</string>
+    <string name="rate_rate_button_title">Rate It Now</string>
+    <string name="rate_suggestion_button_title">Feedback</string>
+    <string name="rate_exit_button_title">Exit</string>
+    <string name="rate_cancel_button_title">No, Thanks</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="rate_message_2">We\'re a small team working extremely hard to give you the best apps for free.Your 5-stars are better than all the money in the world!</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="exit">Exit</string>
+    <string name="feedback">Feedback</string>
+
+    <!-- 问题和建议 -->
+    <string name="issues_and_suggestions">Issues &amp; Suggestions</string>
+    <string name="please_describe_your_issues_or_suggestions_here">Please describe your issues or suggestions here</string>
+    <string name="select_mail_client">Select Mail Client</string>
+
+    <!-- 意见反馈 -->
+    <string name="think_this_app_feel">Do you think "%1$s" works well?</string>
+    <string name="easy_to_use">Well</string>
+    <string name="not_easy_to_use">Feel bad</string>
+    <string name="go_app_store_rate">Could you please give us a rating? ！</string>
+    <string name="can_ren_ju_jue">Reject</string>
+    <string name="liu_jian_yi_p">Please describe your issues or suggestions</string>
+    <string name="jian_yin_item_title">The reason why you feel bad：</string>
+    <string name="other_suggestion">Other reason：</string>
+    <string name="suggestion_hint">Please write down your comments and suggestions</string>
+    <string name="user_info_title">Contact information (optional)</string>
+    <string name="uset_name">Name</string>
+    <string name="uset_contact">Tel/Email/QQ</string>
+    <string name="feedback_commit">Submit</string>
+    <string name="feedback_commit_again">Resubmit</string>
+    <string name="ad_too_more">Too many ads</string>
+    <string name="application_too_simple">Simple function</string>
+    <string name="rough_interface_design">Rough design</string>
+    <string name="interaction_not_reasonable">Irrational interaction</string>
+    <string name="feedback_commit_faile">Submission Failed</string>
+    <string name="feedback_commit_success">Submitted successfully</string>
+    <string name="thanks_for_your_feedback">Thank you for your suggestion</string>
+
+    <string name="feedback_desc">请描述您在使用我们产品的过程中所遇到的问题或者建议，我们会时刻关注，并不断优化！</string>
+    <string name="feedback_input_placeholder">在这里填写您的意见或建议</string>
+    <string name="input_contact_title_required">为了日后方便回复您, 请留下您的联系方式:</string>
+    <string name="input_contact_title_option">若需回复, 可留下您的联系方式:</string>
+    <string name="input_contact_placeholder">  QQ/邮箱/手机号</string>
+
+    <string name="commit">提交</string>
+    <string name="contact_us">联系我们</string>
+    <string name="qq_contact">QQ联系</string>
+    <string name="email_contact">邮件联系</string>
+
+    <string name="close">关闭</string>
+    <string name="feedback_text">意见反馈</string>
+    <string name="feedback_success">反馈成功</string>
+    <string name="feedback_success_subtitle">您的反馈已经收到，我们会认真查看，并尽快修复和完善。感谢您对%s一如既往的支持!</string>
+    <string name="commit_success">提交成功</string>
+    <string name="wenjuan_commit_subtitle">非常感谢您参与我们的问卷调查，我们将会不断改进产品，提升产品品质和用户体验!</string>
+
+    <string name="please_install_qq">请先安装QQ!</string>
+    <string name="please_input_feedback">请填写您的意见或建议!</string>
+    <string name="please_input_contact">请填写您的联系方式!</string>
+    <string name="commit_feedback_failed">提交意见反馈失败</string>
+
+</resources>

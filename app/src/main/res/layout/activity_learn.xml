@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.LearnActivity">
+
+
+    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/rl_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_bg">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:onClick="onLearnClick"
+            android:padding="10dp"
+            android:src="@drawable/btn_back" />
+
+        <RelativeLayout
+            android:id="@+id/fl_container"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/close"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/float_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <LinearLayout
+                android:id="@+id/float_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <ImageView
+                android:id="@+id/float_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="3dp"
+                android:src="@drawable/tm_close" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/tm_ad" />
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_undo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:onClick="onLearnClick"
+                android:padding="8dp"
+                android:src="@drawable/chaxiao_icon_selector" />
+
+            <ImageView
+                android:id="@+id/btn_redo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:button="@null"
+                android:onClick="onLearnClick"
+                android:padding="8dp"
+                android:src="@drawable/houtui_icon_selector" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/btn_empty"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/rg_layout"
+            android:onClick="onLearnClick"
+            android:padding="10dp"
+            android:src="@drawable/btn_qc" />
+
+        <ImageView
+            android:id="@+id/btn_save"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:onClick="onLearnClick"
+            android:padding="10dp"
+            android:src="@drawable/btn_bc" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hsv_image_guide_container"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_guide_container">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_iv_arrow" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:onClick="onLearnClick"
+                android:rotation="-90"
+                android:src="@drawable/arrow_down" />
+
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_guide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_bg_draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="40dp"
+            android:scaleType="fitCenter" />
+
+        <com.example.liusheng.painboard.View.ColorFillView
+            android:id="@+id/cfv_draw_view"
+            android:background="#99FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+    <!--绘制模式下 工具栏-->
+    <LinearLayout
+        android:id="@+id/cl_draw_control_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fl_learn_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/v_draw_paint_size"
+                android:layout_width="5px"
+                android:layout_height="5px"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_draw_paint_size" />
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:max="60"
+                android:progress="12"
+                android:maxHeight="6px"
+                android:minHeight="6px"
+                android:progressBackgroundTint="#EC427C"
+                android:backgroundTint="#AAAAAA"
+                android:thumb="@drawable/vsb_thumb" />
+        </LinearLayout>
+
+
+        <!--底部工具栏-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/bottom_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/white"
+            app:tabGravity="center"
+            app:tabIndicatorColor="#EC427C"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed" />
+
+
+    </LinearLayout>
+
+    <!--广告-->
+    <LinearLayout
+        android:id="@+id/learn_banner_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

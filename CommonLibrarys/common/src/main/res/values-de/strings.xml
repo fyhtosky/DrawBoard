@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_message">Wenn dir %1$s gefällt, würdest Du es bitte bewerten? Dies wird nicht länger als eine Minute dauern. Danke für die Unterstützung!</string>
+    <string name="rate_cancel_button_title">Nein, danke</string>
+    <string name="rate_rate_button_title">Jetzt bewerten</string>
+    <string name="again_to_exit_app">Drücken Sie erneut die Taste BACK, um den Vorgang zu beenden</string>
+
+    <string name="cancel">Abbrechen</string>
+    <string name="rate_message_2">Wir sind ein kleines Team und arbeiten extrem hart, um Ihnen die besten Anwendungen kostenlos anzubieten.Ihre 5 Sterne sind besser als all das Geld in der Welt!</string>
+    <string name="rate_now">Jetzt überprüfen</string>
+    <string name="exit">Verlassen</string>
+    <string name="feedback">Feedback</string>
+</resources>

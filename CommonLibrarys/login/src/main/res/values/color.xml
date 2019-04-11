@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+    <!-- 用户信息-->
+    <color name="personal_page_item_background">#ffffff</color>
+    <color name="personal_page_background">#eeeeee</color>
+    <color name="personal_page_systemdynamic_background">#eeeeee</color>
+    <color name="personal_page_dynamic_textcolor_gray">#b0b0b0</color>
+    <color name="personal_page_leadactivity_textcolor">#333333</color>
+    <color name="personal_page_signture_null_textcolor">#f1f1f1</color>
+
+    <color name="topTitle">#ff1e1e1e</color>
+    <color name="bottomTitleColor0">#ffb7b7b7</color>
+    <color name="tabtext0">#ffbbbbbb</color>
+
+    <color name="login_surebg0">#ff313131</color>
+    <color name="login_text">#ff656464</color>
+    <color name="login_textval">#ffe2e2e2</color>
+    <color name="login_line">#ff252525</color>
+    <color name="register_code">#ffdc3131</color>
+</resources>

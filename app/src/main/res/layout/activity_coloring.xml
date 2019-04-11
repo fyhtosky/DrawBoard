@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context="com.example.liusheng.painboard.Activity.ColoringActivity">
+
+    <FrameLayout
+        android:background="@drawable/nav_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:onClick="onColoringClick"
+            android:src="@drawable/btn_back"
+            android:padding="10dp"
+            android:layout_width="45dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_undo"
+                android:onClick="onColoringClick"
+                android:src="@drawable/chaxiao_icon_selector"
+                android:padding="10dp"
+                android:layout_width="45dp"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:id="@+id/iv_redo"
+                android:onClick="onColoringClick"
+                android:padding="10dp"
+                android:src="@drawable/houtui_icon_selector"
+                android:layout_width="45dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_reset"
+            android:onClick="onColoringClick"
+            android:src="@drawable/btn_qc"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="45dp"
+            android:layout_marginRight="60dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:onClick="onColoringClick"
+            android:src="@drawable/btn_bc"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="45dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <com.example.liusheng.painboard.View.FillImageView
+        android:id="@+id/color_fill_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <LinearLayout
+        android:id="@+id/coloring_banner_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

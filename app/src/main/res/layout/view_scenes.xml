@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/btn_scene1"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/heibai"
+            android:background="@color/colorClear"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene2"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/danhuang"
+            android:background="@color/colorClear"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene3"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/danzi"
+            android:background="@color/colorClear"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene4"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/hengxiantiao"
+            android:background="@color/colorClear"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/btn_scene5"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wangge"
+            android:background="@color/colorClear"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene6"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/mizige"
+            android:background="@color/colorClear"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene7"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/lanqiu"
+            android:background="@color/colorClear"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene8"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/zuqiu"
+            android:background="@color/colorClear"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/btn_scene9"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ganlanqiu"
+            android:background="@color/colorClear"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene10"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/yingsiganlanqiu"
+            android:background="@color/colorClear"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene11"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/btn_scene12"
+            android:onClick="scenesChooseClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

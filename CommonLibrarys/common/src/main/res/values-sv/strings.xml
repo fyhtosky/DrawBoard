@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_message">Gillar du %1$s och kan tänka dig att betygsätta den? Det tar inte mer än en minut. Tack för ditt stöd!</string>
+    <string name="rate_cancel_button_title">Nej tack</string>
+    <string name="rate_rate_button_title">Betygsätt nu!</string>
+    <string name="again_to_exit_app">Tryck på BACK-knappen igen för att avsluta</string>
+
+    <string name="cancel">Avbryt</string>
+    <string name="rate_message_2">Vi är ett litet team som arbetar extremt hårt för att ge dig de bästa apparna gratis. Dina 5-stjärnor är bättre än alla pengar i världen!</string>
+    <string name="rate_now">Bedöm Nu</string>
+    <string name="exit">Avsluta</string>
+    <string name="feedback">Feedback</string>
+</resources>

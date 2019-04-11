@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Activity.DynamicActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_top_container"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:onClick="onDynamicClick"
+            android:src="@drawable/btn_back"
+            android:padding="10dp"
+            android:layout_width="45dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_undo"
+                android:onClick="onDynamicClick"
+                android:src="@drawable/chaxiao_icon_selector"
+                android:padding="10dp"
+                android:layout_width="45dp"
+                android:layout_height="match_parent" />
+
+
+            <ImageView
+                android:id="@+id/iv_redo"
+                android:onClick="onDynamicClick"
+                android:padding="10dp"
+                android:src="@drawable/houtui_icon_selector"
+                android:layout_width="45dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_reset"
+            android:onClick="onDynamicClick"
+            android:src="@drawable/btn_qc"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="45dp"
+            android:layout_marginRight="60dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:onClick="onDynamicClick"
+            android:src="@drawable/btn_bc"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="45dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+    <com.example.liusheng.painboard.View.DynamicSurfaceView
+        android:id="@+id/dynamic_view"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hlv_shader_selector"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <!--广告-->
+    <LinearLayout
+        android:id="@+id/dynamic_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+</LinearLayout>

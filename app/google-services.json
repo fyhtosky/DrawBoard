@@ -1,0 +1,321 @@
+{
+  "project_info": {
+    "project_number": "510688425492",
+    "firebase_url": "https://android-7a56b.firebaseio.com",
+    "project_id": "android-7a56b",
+    "storage_bucket": "android-7a56b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:fd0bf298e4c12ddd",
+        "android_client_info": {
+          "package_name": "com.liubowang.lauchpad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:37b703328df93bc3",
+        "android_client_info": {
+          "package_name": "com.liubowang.metronome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:794c47f085d4aee3",
+        "android_client_info": {
+          "package_name": "com.liubowang.timemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:2a54e2688d3a7b14",
+        "android_client_info": {
+          "package_name": "com.liubowang.ledshowboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:157b38bed0fe3160",
+        "android_client_info": {
+          "package_name": "com.liubowang.timereport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:6a6990464ebec67d",
+        "android_client_info": {
+          "package_name": "com.liubowang.magnifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:509e50be44fb1df2",
+        "android_client_info": {
+          "package_name": "com.liubowang.mosaicgraffiti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:c9b24dd03a28cc4b",
+        "android_client_info": {
+          "package_name": "com.liubowang.heartrate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:bf55c888f32c3070",
+        "android_client_info": {
+          "package_name": "com.liubowang.dubbing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510688425492:android:adafd79d9d3f41f9",
+        "android_client_info": {
+          "package_name": "com.liubowang.drawingboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510688425492-38p8ku0ivdlb4rq784rkm3ul43g13cgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZXa_txGNIacmZsyR96VmIapm1wVGuyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

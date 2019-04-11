@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <com.db.ta.sdk.TMBrTmView
+        android:id="@+id/SmallBannerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:TMBr_size="lander_TMBr">
+    </com.db.ta.sdk.TMBrTmView>
+
+</LinearLayout>

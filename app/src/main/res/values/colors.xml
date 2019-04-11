@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorClear">#00000000</color>
+    <color name="colorMenuBackground">#FCFCFD</color>
+
+    <color name="penColor1">#000000</color>
+    <color name="penColor2">#f8e71c</color>
+    <color name="penColor3">#ff6a6a</color>
+    <color name="penColor4">#2fc0ff</color>
+    <color name="penColor5">#cf2a3f</color>
+    <color name="penColor6">#ff86d8</color>
+    <color name="penColor7">#4ade9d</color>
+    <color name="penColor8">#ffffff</color>
+    <color name="whitColor">#ffffff</color>
+    <color name="pingColor">#a4c7fd</color>
+    <color name="greenColor">#3CB371</color>
+    <color name="grayColor">#20ffffff</color>
+    <color name="menuBtnBackground">#CFD2DE</color>
+
+    <color name="huibai">#FDFDFB</color>
+    <color name="danhuang">#FFFBED</color>
+    <color name="danzi">#CCCEDE</color>
+    <color name="red">#fc1d1d</color>
+    <color name="main_text_color">#555555</color>
+
+</resources>

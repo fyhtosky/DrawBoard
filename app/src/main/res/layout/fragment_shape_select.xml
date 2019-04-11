@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@android:color/black"
+    >
+
+    <!--<com.example.liusheng.painboard.View.HorizontialListView-->
+        <!--android:id="@+id/hlv_shape_selector"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+    <!---->
+    <ImageView
+        android:id="@+id/iv_rect"
+        android:src="@drawable/biaoji_juxing"
+        android:padding="10dp"
+        android:tint="@android:color/white"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/iv_circle"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:src="@drawable/biaoji_yuanxing"
+        android:tint="@android:color/white"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:padding="10dp"
+        android:src="@drawable/biaoji_xian"
+        android:tint="@android:color/white"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:id="@+id/iv_trangle"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_mail"
+        android:tint="@android:color/white"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+</LinearLayout>

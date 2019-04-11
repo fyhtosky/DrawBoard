@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clipChildren="false">
+    <FrameLayout
+        android:id="@+id/close_dialog"
+        android:clipChildren="false"
+        android:layout_width="280dp"
+        android:layout_height="204dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:id="@+id/alert_layout"
+            android:layout_width="240dp"
+            android:layout_height="164dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/shape_corner"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:gravity="right|top"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:orientation="horizontal"
+                android:clipChildren="false">
+                <FrameLayout
+                    android:id="@+id/close_btn_layout"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="-29dp"
+                    android:layout_marginTop="-29dp"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_delete" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/image_expression"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:visibility="visible" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="21dp"/>
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:gravity="top|center" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ffd7d7d7" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/positiveButton"
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/shape_corner_left_bottom_white" />
+
+                <Button
+                    android:id="@+id/negativeButton"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/shape_corner_right_bottom_green" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_drawing_save_dialog"
+    android:minWidth="280dp"
+    android:gravity="center"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp"
+    >
+
+    <ImageView
+        android:src="@drawable/ic_help_dialog"
+        android:layout_marginBottom="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="双手开合可放大缩小图片哦"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_help_ok"
+        android:text="知道了"
+        android:background="@drawable/bg_help_dialog_bt"
+        android:textSize="12sp"
+        android:layout_marginTop="30dp"
+        android:textColor="#F29B9D"
+        android:layout_width="80dp"
+        android:layout_height="30dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/moudle_title"
+            android:textSize="@dimen/money_size"
+            android:textColor="@color/color_pay"
+            />
+        <ImageView
+            android:id="@+id/im_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bpmb_pay_close"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            >
+        </ImageView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_paymoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/moudle_moneyval"
+        android:textColor="@color/color_paymoney"
+        android:textSize="@dimen/money_size"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_paymoney"
+        android:layout_marginTop="15dp"></View>
+    <RelativeLayout
+        android:id="@+id/rl_ali"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/im_ali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/pay_icon_alipay" />
+
+        <TextView
+            android:id="@+id/tv_ali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/im_ali"
+            android:text="@string/moudle_ali"
+            android:textColor="@color/color_pay"
+            android:textSize="@dimen/pay_size" />
+        <TextView
+            android:id="@+id/tv_suggest"
+            android:layout_width="35dp"
+            android:layout_height="17dp"
+            android:background="@drawable/suggest"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/tv_ali"
+            android:text="@string/moudle_suggest"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/suggest_size"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/im_alichoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/pay_icon_chose" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_paymoney"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_wx"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/im_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/pay_icon_wechat" />
+
+        <TextView
+            android:id="@+id/tv_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/im_wx"
+            android:text="@string/moudle_wx"
+            android:textColor="@color/color_pay"
+            android:textSize="@dimen/pay_size" />
+
+        <ImageView
+            android:id="@+id/im_wxchoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/pay_icon_no_chose" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sure"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/paysure"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/moudle_sure"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/pay_size" />
+    </RelativeLayout>
+
+</LinearLayout>

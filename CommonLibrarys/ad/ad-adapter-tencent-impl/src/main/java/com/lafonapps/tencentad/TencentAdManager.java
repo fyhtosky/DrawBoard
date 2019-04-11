@@ -1,0 +1,299 @@
+package com.lafonapps.tencentad;
+
+import android.app.Activity;
+import android.app.Application;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+
+import com.lafonapps.adadapter.AdBean;
+import com.lafonapps.adadapter.AdListener;
+import com.lafonapps.adadapter.AdType;
+import com.lafonapps.adadapter.AdsAdapter;
+import com.lafonapps.adadapter.utils.AdSize;
+import com.lafonapps.adadapter.utils.ViewUtil;
+import com.qq.e.ads.banner.ADSize;
+import com.qq.e.ads.banner.BannerADListener;
+import com.qq.e.ads.banner.BannerView;
+import com.qq.e.ads.cfg.VideoOption;
+import com.qq.e.ads.nativ.NativeExpressAD;
+import com.qq.e.ads.nativ.NativeExpressADView;
+import com.qq.e.ads.splash.SplashAD;
+import com.qq.e.ads.splash.SplashADListener;
+import com.qq.e.comm.util.AdError;
+
+import java.util.List;
+
+import static com.lafonapps.adadapter.utils.CommonUtils.startOtherActivity;
+
+/**
+ * <pre>
+ *     function
+ *     author : leishangming
+ *     time   : 2018/08/10
+ *     e-mail : shangming.lei@lafonapps.com
+ *     简 书  : https://www.jianshu.com/u/644036b17b6f
+ *     github : https://github.com/lsmloveu
+ * </pre>
+ */
+
+public class TencentAdManager  implements AdsAdapter {
+    private static final String TAG = TencentAdManager.class.getName();
+    private ViewGroup mContainer;
+
+    private int adWidth, adHeight; // 广告宽高
+    //开屏广告
+    private SplashAD splashAD;
+    private BannerView bannerAD;
+    private Object interstitialAD;
+    private NativeExpressAD nativeExpressAD;
+    private NativeExpressADView nativeExpressADView;
+    private boolean isInterstialReady = false;
+    private int retryDelayForFailed;
+    private boolean isClickAdBack = false;
+
+    @Override
+    public void initAdSdk(Application application, String appId, boolean isDebug) {
+
+    }
+
+    @Override
+    public void showAd(final AdBean adBean) {
+        try {
+            String adId = "";
+            if (adBean!=null) {
+                final Activity context = adBean.getContext();
+                final int adSign = adBean.getAdType() ;
+                final AdListener adListener = adBean.getAdListener();
+                final Class targetClass = adBean.getTargetClass();
+                String  appId = adBean.getTencentAppId();
+                mContainer = adBean.getViewGroup();
+                AdSize adSize;
+                //竖屏开屏
+                switch (adSign) {
+                    //竖屏开屏
+                    case AdType.SPLASHTYPE:
+                        mContainer = adBean.getViewGroup();
+                        adId = adBean.getSplashId();
+                        splashAD = new SplashAD(context, mContainer, appId, adId, new SplashADListener() {
+                            @Override
+                            public void onADDismissed() {
+                                adListener.onDismiss(AdType.SPLASHTYPE);
+                                Log.d(TAG, "onAdDismissed");
+//                                startOtherActivity(context, targetClass);
+                            }
+
+                            @Override
+                            public void onNoAD(AdError adError) {
+                                adListener.onLoadFailed(AdType.SPLASHTYPE);
+                                Log.d(TAG, "onNoAD");
+                                if (!isClickAdBack) {
+                                    startOtherActivity(context, targetClass);
+                                }
+                            }
+
+                            @Override
+                            public void onADPresent() {
+                                Log.d(TAG, "onADPresent");
+                                adListener.onAdExposure(AdType.SPLASHTYPE);
+
+                            }
+
+                            @Override
+                            public void onADClicked() {
+                                adListener.onAdClick(AdType.SPLASHTYPE);
+                                Log.d(TAG, "onADClicked");
+                                isClickAdBack = true;
+                            }
+
+                            @Override
+                            public void onADTick(long l) {
+                                Log.d(TAG, "onADTick");
+                            }
+
+                            @Override
+                            public void onADExposure() {
+                                Log.d(TAG, "onADExposure");
+                                adListener.onLoaded(AdType.SPLASHTYPE);
+                            }
+                        }, 0);
+                        break;
+                    //信息流广告其实没有大中小之分，高度需自适应才能完全展示
+                    case AdType.NATIVELTYPE:
+                        getNativeExpressAD (adBean,AdType.NATIVELTYPE);
+                        break;
+                    case AdType.NATIVESTYPE:
+                        getNativeExpressAD (adBean,AdType.NATIVESTYPE);
+                        break;
+                    case AdType.NATIVEMTYPE:
+                        getNativeExpressAD (adBean,AdType.NATIVEMTYPE);
+                        break;
+                    case AdType.BANNERTYPE:
+                        mContainer = adBean.getViewGroup();
+                        adId = adBean.getBannerId();
+                        bannerAD = new BannerView(context, ADSize.BANNER, appId, adId);
+                        bannerAD.setRefresh(120);
+                        bannerAD.setShowClose(true);
+                        bannerAD.setADListener(new BannerADListener() {
+                                                   @Override
+                                                   public void onNoAD(AdError adError) {
+                                                       adListener.onLoadFailed(AdType.BANNERTYPE);
+                                                   }
+
+                                                   @Override
+                                                   public void onADReceiv() {
+                                                       adListener.onLoaded(AdType.BANNERTYPE);
+                                                       AdType.BANNERCLOSE = false;
+                                                   }
+
+                                                   @Override
+                                                   public void onADExposure() {
+                                                       adListener.onAdExposure(AdType.BANNERTYPE);
+                                                       AdType.BANNERCLOSE = false;
+                                                   }
+
+                                                   @Override
+                                                   public void onADClosed() {
+                                                       adListener.onCloseClick(AdType.BANNERTYPE);
+                                                   }
+
+                                                   @Override
+                                                   public void onADClicked() {
+                                                       adListener.onAdClick(AdType.BANNERTYPE);
+                                                   }
+
+                                                   @Override
+                                                   public void onADLeftApplication() {
+                                                       adListener.onDismiss(AdType.BANNERTYPE);
+                                                   }
+
+                                                   @Override
+                                                   public void onADOpenOverlay() {
+
+                                                   }
+
+                                                   @Override
+                                                   public void onADCloseOverlay() {
+
+                                                   }
+                                               });
+                        mContainer.addView(bannerAD);
+                        /* 发起广告请求，收到广告数据后会展示数据   */
+                        bannerAD.loadAD();
+                        break;
+                    case AdType.FLOATTYPE:
+                        adId = adBean.getFloatId();
+                        break;
+                    case AdType.INTERSTIALTYPE:
+                        adId = adBean.getInterstitialId();
+                        interstitialAD = new Object();
+                        //去掉暂无实现
+                        break;
+                    case AdType.VIDEOTYPE:
+                        adId = adBean.getVideoId();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        } catch (Exception e) {
+
+        }
+
+    }
+
+    @Override
+    public void disPlayInterstitialAd() {
+
+    }
+
+    public void getNativeExpressAD (AdBean adBean, final int adType) {
+        Activity context = adBean.getContext();
+        mContainer = adBean.getViewGroup();
+        String adId = adBean.getNativeLId();
+        final AdListener adListener = adBean.getAdListener();
+        nativeExpressAD = new NativeExpressAD(context, new com.qq.e.ads.nativ.ADSize(320, com.qq.e.ads.nativ.ADSize.AUTO_HEIGHT), adBean.getTencentAppId(), adId, new NativeExpressAD.NativeExpressADListener() {
+            @Override
+            public void onNoAD(AdError adError) {
+                adListener.onLoadFailed(adType);
+            }
+
+            @Override
+            public void onADLoaded(List<NativeExpressADView> list) {
+                if (list.size() > 0) {
+                    Log.d(TAG, "onADLoaded");
+
+                    // 释放前一个NativeExpressADView的资源
+                    if (nativeExpressADView != null) {
+                        nativeExpressADView.destroy();
+                    }
+                    nativeExpressADView = list.get(0);
+                    // 保证View被绘制的时候是可见的，否则将无法产生曝光和收益。
+                    FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                    layoutParams.gravity = Gravity.CENTER;
+                    ViewUtil.addView(mContainer, nativeExpressADView, layoutParams);
+                    nativeExpressADView.render();
+                }
+                adListener.onLoaded(adType);
+            }
+
+            @Override
+            public void onRenderFail(NativeExpressADView nativeExpressADView) {
+                adListener.onLoadFailed(adType);
+            }
+
+            @Override
+            public void onRenderSuccess(NativeExpressADView nativeExpressADView) {
+            }
+
+            @Override
+            public void onADExposure(NativeExpressADView nativeExpressADView) {
+                adListener.onAdExposure(adType);
+            }
+
+            @Override
+            public void onADClicked(NativeExpressADView nativeExpressADView) {
+                adListener.onAdClick(adType);
+            }
+
+            @Override
+            public void onADClosed(NativeExpressADView nativeExpressADView) {
+
+            }
+
+            @Override
+            public void onADLeftApplication(NativeExpressADView nativeExpressADView) {
+
+            }
+
+            @Override
+            public void onADOpenOverlay(NativeExpressADView nativeExpressADView) {
+
+            }
+
+            @Override
+            public void onADCloseOverlay(NativeExpressADView nativeExpressADView) {
+
+            }
+        }); // 这里的Context必须为Activity
+        nativeExpressAD.setVideoOption(new VideoOption.Builder()
+                .setAutoPlayPolicy(VideoOption.AutoPlayPolicy.WIFI) // 设置什么网络环境下可以自动播放视频
+                .setAutoPlayMuted(true) // 设置自动播放视频时，是否静音
+                .build()); // setVideoOption是可选的，开发者可根据需要选择是否配置
+        nativeExpressAD.loadAD(1);
+    }
+
+    @Override
+    public void destoryAd() {
+        if (bannerAD!=null) {
+            bannerAD.destroy();
+        }
+        if (interstitialAD!=null) {
+            interstitialAD = null;
+        }
+        if (nativeExpressADView!=null) {
+            nativeExpressADView.destroy();
+        }
+    }
+}

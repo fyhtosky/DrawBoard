@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_message">Αν σ\' αρέσει η εφαρμογή %1$s, θα μπορούσες να αφιερώσεις ένα δευτερόλεπτο για να την αξιολογήσεις; Ευχαριστούμε για την υποστήριξη!</string>
+    <string name="rate_cancel_button_title">Όχι, ευχαριστώ</string>
+    <string name="rate_rate_button_title">Αξιολόγησε τώρα</string>
+    <string name="again_to_exit_app">Πιέστε ξανά το πλήκτρο BACK για έξοδο</string>
+
+    <string name="cancel">Άκυρο</string>
+    <string name="rate_message_2">Είμαστε μια μικρή ομάδα που εργαζόμαστε πολύ σκληρά για να σας δώσουμε τις καλύτερες εφαρμογές για δωρεάν. Τα 5 αστέρια σας είναι καλύτερα από όλα τα χρήματα του κόσμου!</string>
+    <string name="rate_now">Επανεξέταση Τώρα</string>
+    <string name="exit">Έξοδος</string>
+    <string name="feedback">Σχόλια</string>
+</resources>

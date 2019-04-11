@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_message">Als het gebruik van %1$s je bevalt, wil je dan een moment nemen om het te beoordelen? Het duurt nog geen minuut. Bedankt voor je steun!</string>
+    <string name="rate_cancel_button_title">Nee, bedankt</string>
+    <string name="rate_rate_button_title">Beoordeel nu</string>
+    <string name="again_to_exit_app">Druk nogmaals op de knop BACK om uit te gaan</string>
+
+    <string name="cancel">Annuleren</string>
+    <string name="rate_message_2">We zijn een klein team dat  hard werkt om jou gratis apps te geven. Jouw 5-sterren beoordeling is beter dan al het geld in de wereld!</string>
+    <string name="rate_now">Review nu</string>
+    <string name="exit">Beëindigen</string>
+    <string name="feedback">Feedback</string>
+</resources>

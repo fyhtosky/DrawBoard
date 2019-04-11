@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorwhite">#ffffffff</color>
+    <color name="color_payoff">#d3d3d3</color>
+    <color name="color_alion">#07a0f8</color>
+    <color name="color_wxon">#ff41b035</color>
+    <color name="color_suggest">#ffff1515</color>
+
+    <color name="color_pay">#ff202020</color>
+    <color name="color_paymoney">#ffa4a4a4</color>
+    <color name="navpage">#FFE1E8EB</color>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_message">%1$sをお使いいただき大変ありがとうございます。もしよろしければ1分程で済みますので、このアプリの評価をお願いします。ご協力感謝いたします！</string>
+    <string name="rate_cancel_button_title">いえ、結構です</string>
+    <string name="rate_rate_button_title">今すぐ評価する</string>
+    <string name="again_to_exit_app">戻るボタンをもう一度押して終了します。</string>
+
+    <string name="cancel">キャンセル</string>
+    <string name="rate_message_2">私たちは最高のアプリを無料で提供しようと日々努めている小規模チームです。ユーザーの5つ星は実際のお金よりもはるかに価値のあるものです！</string>
+    <string name="rate_now">今すぐレビューする</string>
+    <string name="exit">サインアウト</string>
+    <string name="feedback">フィードバック</string>
+</resources>

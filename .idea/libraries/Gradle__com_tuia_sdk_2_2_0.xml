@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tuia:sdk-2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/468e912666f36c633c8d58159ff7cefee120e19b/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/468e912666f36c633c8d58159ff7cefee120e19b/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tuia/sdk/2.2.0/7a2d0c4d5e97ad08af5bd25c93fb683d79300ae1/sdk-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

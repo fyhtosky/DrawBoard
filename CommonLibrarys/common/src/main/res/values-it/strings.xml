@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_message">Ti piace usare %1$s? Perché non gli dai un voto? Non ci vorrà più di un minuto. Grazie per il tuo supporto!</string>
+    <string name="rate_cancel_button_title">No, grazie</string>
+    <string name="rate_rate_button_title">Vota ora</string>
+    <string name="again_to_exit_app">Premere di nuovo il tasto BACK per uscire</string>
+
+    <string name="cancel">Elimina</string>
+    <string name="rate_message_2">Siamo una piccolo team che lavora sodo per garantirti le migliori app gratuitamente. la tua valutazione positiva vale più di tutto l\'oro del mondo per noi!</string>
+    <string name="rate_now">Recensisci ora</string>
+    <string name="exit">Esci</string>
+    <string name="feedback">Feedback</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">支  付</string>
+    <string name="moudle_title">选择支付方式</string>
+    <string name="moudle_moneyval">支付金额：￥0.01</string>
+    <string name="moudle_ali">支付宝</string>
+    <string name="moudle_suggest">推荐</string>
+    <string name="moudle_wx">微信支付</string>
+    <string name="moudle_sure">立即支付</string>
+    <string name="moudle_resure">重新支付</string>
+
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <string name="cancel">取消</string>
+    <string name="login_go0">去绑定</string>
+    <string name="login_go1">去登录</string>
+
+    <string name="dialog6_title">新版本支持账号登录了</string>
+    <string name="dialog6">\n为同步您的VIP信息(无需再次购买)，请重新注册登录，不影响您的正常使用！</string>
+    <string name="dialog7">\n登录购买VIP，解锁VIP高级功能</string>
+    <string name="dialog8">\nVIP用户重新注册登录，即可正常使用，无需再次购买！</string>
+    <string name="dialog9">\n您已成功订阅VIP功能(订单若有延迟未生效，稍后重启应用即可)</string>
+</resources>

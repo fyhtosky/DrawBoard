@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_clear">#00000000</color>
+
+    <!--状态栏颜色-->
+    <color name="status_bar_color">#f2ce0f</color>
+    <!--发送成功界面顶部导航栏颜色-->
+    <color name="send_successful_top_bar_bg">#f2ce0f</color>
+    <!--发送成功界面标题颜色-->
+    <color name="send_successful_title_color">#33322e</color>
+    <!--发送成功文字颜色-->
+    <color name="send_successful_seccess_color">#33322e</color>
+    <!--发送成功小文字颜色-->
+    <color name="send_successful_seccess_sub_color">#6633322e</color>
+    <!--发送成功界面背景颜色-->
+    <color name="send_successful_background_color">#ffffff</color>
+
+
+    <!--意见反馈填写界面-->
+    <!--"意见反馈"文字颜色-->
+    <color name="feedback_input_title_color">#3d424d</color>
+    <!--意见反馈说明小字颜色-->
+    <color name="feedback_input_desc_color">#993d424d</color>
+    <!--意见反馈填写框文字颜色-->
+    <color name="feedback_input_content_color">#993d424d</color>
+    <!--意见反馈填写框背景颜色-->
+    <color name="feedback_input_content_bg_color">#ebeced</color>
+    <!--联系方式填写处文字颜色-->
+    <color name="feedback_input_contact_content_color">#803d424d</color>
+    <!--提示留下联系方式文本颜色-->
+    <color name="feedback_input_contact_label_color">#3d424d</color>
+    <!--提交文字颜色-->
+    <color name="feedback_input_send_text_color">#33322e</color>
+    <!--分割线颜色-->
+    <color name="feedback_input_separator_color">#993d424d</color>
+    <!--"联系我们"文字颜色-->
+    <color name="feedback_input_contact_us_color">#3d424d</color>
+    <!--联系方式文字颜色-->
+    <color name="feedback_input_contact_method_text_color">#3d424d</color>
+    <!--背景颜色-->
+    <color name="feedback_input_background_color">#ffffff</color>
+
+    <color name="rate_dialog_main_color">#1d9c5a</color>
+    <color name="rate_dialog_background_color">#ffffff</color>
+    <color name="rate_dialog_default_text_color">#999999</color>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="skip">跳过</string>
+
+    <!-- 提示评论 -->
+    <string name="no_market_install_message">您没有安装任何应用市场</string>
+    <string name="again_to_exit_app">再按一次返回键退出</string>
+
+    <string name="rate_message">如果您觉得"%1$s"很好用，可否为其评一个分数？评分过程只需花费很少的时间。感谢您的支持！</string>
+    <string name="rate_rate_button_title">好用，去评分</string>
+    <string name="rate_suggestion_button_title">我要吐槽</string>
+    <string name="rate_exit_button_title">退出</string>
+    <string name="rate_cancel_button_title">不了，谢谢</string>
+
+    <string name="cancel">取消</string>
+    <string name="rate_message_2">我们是一个积极向上的开发团队，致力于为您提供最好的免费的App。您的五星评分是对我们开发最好的支持！</string>
+    <string name="rate_now">立即评分</string>
+    <string name="exit">退出应用</string>
+    <string name="feedback">意见反馈</string>
+
+    <!-- 问题和建议 -->
+    <string name="issues_and_suggestions">问题和建议</string>
+    <string name="please_describe_your_issues_or_suggestions_here">请在此处描述您的问题或建议</string>
+    <string name="select_mail_client">选择邮件客户端</string>
+
+    <!-- 意见反馈 -->
+    <string name="think_this_app_feel">您觉得"%1$s"好用吗？</string>
+    <string name="easy_to_use">好用</string>
+    <string name="not_easy_to_use">不好用</string>
+    <string name="go_app_store_rate">去应用商店给个评价吧！</string>
+    <string name="can_ren_ju_jue">残忍拒绝</string>
+    <string name="liu_jian_yi_p">留下您的宝贵建议，帮助我们改进产品</string>
+    <string name="jian_yin_item_title">让您觉得不好用的原因是:</string>
+    <string name="other_suggestion">其他原因:</string>
+    <string name="suggestion_hint">请写下您的意见和建议...</string>
+    <string name="user_info_title">留下联系方式便于我们回复您(选填)</string>
+    <string name="uset_name">您的姓名</string>
+    <string name="uset_contact">Tel/Email/QQ</string>
+    <string name="feedback_commit">提交</string>
+    <string name="feedback_commit_again">重新提交</string>
+    <string name="ad_too_more">广告太多</string>
+    <string name="application_too_simple">应用功能太简单</string>
+    <string name="rough_interface_design">界面设计粗糙</string>
+    <string name="interaction_not_reasonable">功能交互不合理</string>
+    <string name="feedback_commit_faile">提交失败！</string>
+    <string name="feedback_commit_success">提交成功！</string>
+    <string name="thanks_for_your_feedback">非常感谢您的建议，我们会尽快改进！</string>
+
+    <string name="feedback_desc">请描述您在使用我们产品的过程中所遇到的问题或者建议，我们会时刻关注，并不断优化！</string>
+    <string name="feedback_input_placeholder">在这里填写您的意见或建议</string>
+    <string name="input_contact_title_required">为了日后方便回复您, 请留下您的联系方式:</string>
+    <string name="input_contact_title_option">若需回复, 可留下您的联系方式:</string>
+    <string name="input_contact_placeholder">  QQ/邮箱/手机号</string>
+
+    <string name="commit">提交</string>
+    <string name="contact_us">联系我们</string>
+    <string name="qq_contact">QQ联系</string>
+    <string name="email_contact">邮件联系</string>
+
+    <string name="close">关闭</string>
+    <string name="feedback_text">意见反馈</string>
+    <string name="feedback_success">反馈成功</string>
+    <string name="feedback_success_subtitle">您的反馈已经收到，我们会认真查看，并尽快修复和完善。感谢您对%s一如既往的支持!</string>
+    <string name="commit_success">提交成功</string>
+    <string name="wenjuan_commit_subtitle">非常感谢您参与我们的问卷调查，我们将会不断改进产品，提升产品品质和用户体验!</string>
+
+    <string name="please_install_qq">请先安装QQ!</string>
+    <string name="please_input_feedback">请填写您的意见或建议!</string>
+    <string name="please_input_contact">请填写您的联系方式!</string>
+    <string name="commit_feedback_failed">提交意见反馈失败</string>
+</resources>

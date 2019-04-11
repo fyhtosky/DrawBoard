@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/CommonLibrarys.iml" filepath="$PROJECT_DIR$/CommonLibrarys/CommonLibrarys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/ad/ad.iml" filepath="$PROJECT_DIR$/CommonLibrarys/ad/ad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter/ad-adapter.iml" filepath="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter/ad-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-admob-impl/ad-adapter-admob-impl.iml" filepath="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-admob-impl/ad-adapter-admob-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-facebook-impl/ad-adapter-facebook-impl.iml" filepath="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-facebook-impl/ad-adapter-facebook-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-oppo-impl/ad-adapter-oppo-impl.iml" filepath="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-oppo-impl/ad-adapter-oppo-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-tencent-impl/ad-adapter-tencent-impl.iml" filepath="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-tencent-impl/ad-adapter-tencent-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-tuia-impl/ad-adapter-tuia-impl.iml" filepath="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-tuia-impl/ad-adapter-tuia-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-xiaomi-impl/ad-adapter-xiaomi-impl.iml" filepath="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-xiaomi-impl/ad-adapter-xiaomi-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/common/common.iml" filepath="$PROJECT_DIR$/CommonLibrarys/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/mta/mta.iml" filepath="$PROJECT_DIR$/CommonLibrarys/mta/mta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonLibrarys/mta/mta-baidu/mta-baidu.iml" filepath="$PROJECT_DIR$/CommonLibrarys/mta/mta-baidu/mta-baidu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/trunk.iml" filepath="$PROJECT_DIR$/.idea/trunk.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/CommonLibrarys" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/ad" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-admob-impl" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-facebook-impl" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-oppo-impl" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-tencent-impl" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-tuia-impl" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/ad/ad-adapter-xiaomi-impl" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/common" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/mta" />
+            <option value="$PROJECT_DIR$/CommonLibrarys/mta/mta-baidu" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

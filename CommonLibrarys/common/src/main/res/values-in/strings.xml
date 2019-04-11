@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="rate_message">Nếu thích sử dụng %1$s, bạn có muốn giành một chút thời gian để đánh giá nó? Sẽ không lâu hơn một phút. Cảm ơn sự hỗ trợ của bạn!</string>-->
+    <!--<string name="rate_cancel_button_title">Không, Cảm ơn</string>-->
+    <!--<string name="rate_rate_button_title">Đánh Giá Ngay</string>-->
+    <!--<string name="again_to_exit_app">Nhấn lại nút BACK để thoát</string>-->
+
+    <string name="cancel">Batalkan</string>
+    <string name="rate_message_2">Kami adalah tim kecil yang bekerja sangat keras untuk memberikan Anda aplikasi terbaik secara gratis. 5-bintang dari Anda lebih baik dari semua uang di dunia ini!</string>
+    <string name="rate_now">Tinjau sekarang</string>
+    <string name="exit">Keluar</string>
+    <string name="feedback">Tanggapan</string>
+</resources>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">login</string>
+    <string name="login_user">请输入手机号</string>
+    <string name="login_psw">请输入密码</string>
+    <string name="regist_setpsw">请设置密码</string>
+    <string name="find_pswagain">再次输入密码</string>
+    <string name="login_title">账号登录</string>
+    <string name="login_sure">登录</string>
+    <string name="login_register">注册账号</string>
+    <string name="login_findpsw">忘记密码？</string>
+    <string name="login_info">登录／注册</string>
+    <string name="login_ok">已登录</string>
+    <string name="login_unkonw">未知</string>
+    <string name="login_go0">去注册登录</string>
+    <string name="login_go1">去登录</string>
+
+    <string name="toast1">手机号输入有误，请确认后重新输入！</string>
+    <string name="toast2">密码不能为空且不少于6个字符，请确认后重新输入！</string>
+    <string name="toast3">验证码输入有误，请确认后重新输入！</string>
+    <string name="toast4">登录成功！</string>
+    <string name="toast5">登录失败！</string>
+    <string name="toast6">请检查网络是否可用！</string>
+    <string name="toast7">请求失败！</string>
+    <string name="toast8">两次输入密码不一致，请检查后重新输入！</string>
+    <string name="toast9">网络状态不佳，请稍候再试！</string>
+    <string name="toast10">您还未注册登录...</string>
+
+    <string name="dialog1">登录请求中，请稍候...</string>
+    <string name="dialog2">获取短信验证码请求中，请稍候...</string>
+    <string name="dialog3">验证码校验请求中，请稍候...</string>
+    <string name="dialog4">注册请求中，请稍候...</string>
+    <string name="dialog5">重置密码请求中，请稍候...</string>
+
+    <string name="dialog6_title">新版本支持账号登录了</string>
+    <string name="dialog6">\n为同步您的VIP信息(无需再次购买)，请重新注册登录，不影响您的正常使用！</string>
+    <string name="dialog7">\n登录购买VIP，解锁VIP高级功能</string>
+    <string name="dialog8">\nVIP用户重新注册登录，即可正常使用，无需再次购买！</string>
+    <string name="dialog9">\n您已成功订阅VIP功能(订单若有延迟未生效，稍后重启应用即可)</string>
+
+    <string name="register_title">注册新账号</string>
+    <string name="register_code">请输入验证码</string>
+    <string name="register_getcode">获取验证码</string>
+    <string name="register_sure">注册</string>
+    <string name="cancel">取消</string>
+    <string name="getcode_again">重新获取</string>
+
+    <string name="findpsw_title">忘记密码</string>
+    <string name="findpsw_suretel">验证手机号</string>
+
+    <string name="resetpsw_title">重置密码</string>
+    <string name="resetpsw_sure0">请输入新密码</string>
+    <string name="resetpsw_sure1">确认新密码</string>
+    <string name="resetpsw_sure">确认</string>
+    <string name="register_backlogin">已有账号，去登录</string>
+
+    <string name="hint">提示"</string>
+</resources>

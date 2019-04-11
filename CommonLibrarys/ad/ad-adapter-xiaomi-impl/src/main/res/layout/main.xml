@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/vertical_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="竖版开屏广告" />
+
+    <Button
+        android:id="@+id/horizontal_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="横版开屏广告" />
+
+    <Button
+        android:id="@+id/vertical_interstitial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="竖版插屏广告" />
+
+    <Button
+        android:id="@+id/horizontal_interstitial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="横版插屏广告" />
+
+    <Button
+        android:id="@+id/single_news_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="信息流广告" />
+
+    <Button
+        android:id="@+id/list_news_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="信息流list" />
+
+    <Button
+        android:id="@+id/plaster_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="贴片视频" />
+
+    <Button
+        android:id="@+id/list_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="视频信息流" />
+
+    <Button
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="banner广告" />
+
+    <Button
+        android:id="@+id/float_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浮动广告"/>
+</LinearLayout>

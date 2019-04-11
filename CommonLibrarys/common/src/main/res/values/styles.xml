@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="SplashTransformAnimationTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="Android:windowEnterTransition">@transition/fadein.xml</item>-->
+        <!--<item name="Android:windowExitTransition">@transition/fadeout.xml</item>-->
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="RateDialogTheme" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 底部 dialog 进入离开动画 -->
+    <style name="Animation.Bottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_up_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_down_out</item>
+    </style>
+
+</resources>

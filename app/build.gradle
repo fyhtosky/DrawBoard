@@ -1,0 +1,484 @@
+apply plugin: 'com.android.application'
+
+//versionCode 349
+//versionName "3.4.7"
+
+//OPPO&vivo
+ext.BigVersionCode = 375
+ext.BigVersionName = "3.7.5"
+
+ext.VersionCode = 355
+ext.VersionName = "3.5.5"
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword 'lafonapps123'
+            storeFile file('../key/android.jks')
+            storePassword 'lafonapps123'
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+    defaultConfig {
+        applicationId "com.liubowang.drawingboard"
+        minSdkVersion 19
+        targetSdkVersion 27
+        multiDexEnabled = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    productFlavors {
+        huawei { // 华为
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"\""
+            buildConfigField "String", "interstitialAdName", "\"\""
+            buildConfigField "String", "vedioAdName", "\"\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        xiaomi { //小米
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"xiaomi\""
+            buildConfigField "String", "standbyBannerAdName", "\"tencent\""
+            buildConfigField "String", "floatAdName", "\"\""
+            buildConfigField "String", "nativeLAdName", "\"xiaomi\""
+            buildConfigField "String", "nativeMAdName", "\"xiaomi\""
+            buildConfigField "String", "nativeSAdName", "\"xiaomi\""
+            buildConfigField "String", "splashAdName", "\"tencent\""
+            buildConfigField "String", "interstitialAdName", "\"xiaomi\""
+            buildConfigField "String", "vedioAdName", "\"xiaomi\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        oppo { // OPPO
+            versionCode BigVersionCode
+            versionName BigVersionName
+            buildConfigField "String", "bannerAdName", "\"tencent\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"tencent\""
+            buildConfigField "String", "interstitialAdName", "\"\""
+            buildConfigField "String", "vedioAdName", "\"\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        vivo { // vivo
+            versionCode BigVersionCode
+            versionName BigVersionName
+            buildConfigField "String", "bannerAdName", "\"tencent\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"tencent\""
+            buildConfigField "String", "interstitialAdName", "\"\""
+            buildConfigField "String", "vedioAdName", "\"\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        googlePlay { //Google Play商店
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"admob\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"admob\""
+            buildConfigField "String", "nativeLAdName", "\"facebook\""
+            buildConfigField "String", "nativeMAdName", "\"admob\""
+            buildConfigField "String", "nativeSAdName", "\"admob\""
+            buildConfigField "String", "splashAdName", "\"admob\""
+            buildConfigField "String", "interstitialAdName", "\"admob\""
+            buildConfigField "String", "vedioAdName", "\"admob\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        tencent { //腾讯应用宝
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"tencent\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"tencent\""
+            buildConfigField "String", "nativeLAdName", "\"tencent\""
+            buildConfigField "String", "nativeMAdName", "\"tencent\""
+            buildConfigField "String", "nativeSAdName", "\"tencent\""
+            buildConfigField "String", "splashAdName", "\"tencent\""
+            buildConfigField "String", "interstitialAdName", "\"tencent\""
+            buildConfigField "String", "vedioAdName", "\"tencent\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        baidu { //百度助手
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"tencent\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"tuia\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"tencent\""
+            buildConfigField "String", "interstitialAdName", "\"tencent\""
+            //需要用oppo手机可正常显示 测试oppo的插屏请改用这个applicationId  com.lixiangdong.songcutter 用这个ID是无法调起微信支付的
+            buildConfigField "String", "vedioAdName", "\"xiaomi\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        qihu360 { // 奇虎360
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"tencent\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"tuia\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"tencent\""
+            buildConfigField "String", "interstitialAdName", "\"\""
+            buildConfigField "String", "vedioAdName", "\"\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        meizu { // 魅族
+            versionCode VersionCode
+            versionName VersionName
+
+            buildConfigField "String", "bannerAdName", "\"\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"\""
+            buildConfigField "String", "interstitialAdName", "\"\""
+            buildConfigField "String", "vedioAdName", "\"\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        samsung { // 三星
+            versionCode VersionCode
+            versionName VersionName
+
+            buildConfigField "String", "bannerAdName", "\"\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"\""
+            buildConfigField "String", "interstitialAdName", "\"\""
+            buildConfigField "String", "vedioAdName", "\"\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        amazon { // 亚马逊
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"facebook\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"facebook\""
+            buildConfigField "String", "nativeLAdName", "\"facebook\""
+            buildConfigField "String", "nativeMAdName", "\"facebook\""
+            buildConfigField "String", "nativeSAdName", "\"facebook\""
+            buildConfigField "String", "splashAdName", "\"facebook\""
+            buildConfigField "String", "interstitialAdName", "\"facebook\""
+            buildConfigField "String", "vedioAdName", "\"facebook\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        uptodown { // uptodown
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"\""
+            buildConfigField "String", "interstitialAdName", "\"\""
+            buildConfigField "String", "vedioAdName", "\"\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+
+        noAd { // 无广告版
+            versionCode VersionCode
+            versionName VersionName
+            buildConfigField "String", "bannerAdName", "\"\""
+            buildConfigField "String", "standbyBannerAdName", "\"\""
+            buildConfigField "String", "floatAdName", "\"\""
+            buildConfigField "String", "nativeLAdName", "\"\""
+            buildConfigField "String", "nativeMAdName", "\"\""
+            buildConfigField "String", "nativeSAdName", "\"\""
+            buildConfigField "String", "splashAdName", "\"\""
+            buildConfigField "String", "interstitialAdName", "\"\""
+            buildConfigField "String", "vedioAdName", "\"\""
+            //点击横幅广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnBannerViewClick", "false"
+            //点击开屏广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "showComfirmBeforeDownloadAppOnSplashAdClick", "false"
+            //点击其它广告下载应用或打开网址之前是否提示用户。true为先提醒用户，再次点击会下载应用或打开网址。false为不提示用户，直接下载应用或打开网址
+            buildConfigField "boolean", "shouldComfirmBeforeDownloadAppOnOtherAdViewClick", "false"
+        }
+        productFlavors.all {
+            flavor ->
+                flavor.manifestPlaceholders = [
+                        OPPO_CHANNEL_VALUE : name,
+                        UMENG_CHANNEL_VALUE: name,
+                        MTJ_APP_KEY        : "6Pq32hYS5lG9h2NDHLyRm2DXEUGgFiCI",
+                        MTJ_CHANNEL        : name,
+                        app_name           : name
+                ]
+        }
+    }
+    //强制统一依赖库版本
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.google.android.gms' || requested.group == 'com.google.firebase') {
+                details.useVersion '15.0.0'
+            }
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion "27.0.2"
+                }
+            }
+            if (requested.group == 'com.android.support.constraint') {
+                details.useVersion "1.1.2"
+            }
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                //release
+                def fileName = "画画板-${variant.productFlavors[0].name}-${versionName}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.spring.io/libs-snapshot'
+    }
+
+    maven {
+        url "http://mvn.com.example.liusheng.painboard.leancloud.cn/nexus/content/repositories/public"
+    }
+}
+
+configurations {
+
+//小米平台编译
+    xiaomiDebugCompile //Debug模式
+    xiaomiReleaseCompile //Release模式
+
+    //百度助手平台编译
+    baiduDebugCompile //Debug模式
+    baiduReleaseCompile //Release模式
+
+    //vivo平台编译
+    vivoDebugCompile //Debug模式
+    vivoReleaseCompile //Release模式
+
+    //奇虎360平台编译
+    qihu360DebugCompile //Debug模式
+    qihu360ReleaseCompile //Release模式
+
+    //魅族平台编译
+    meizuDebugCompile //Debug模式
+    meizuReleaseCompile //Release模式
+
+    //三星平台编译
+    samsungDebugCompile //Debug模式
+    samsungReleaseCompile //Release模式
+
+    //Google Play平台编译
+    googlePlayDebugCompile //Debug模式
+    googlePlayReleaseCompile //Release模式
+
+    //华为平台编译
+    huaweiDebugCompile //Debug模式
+    huaweiReleaseCompile //Release模式
+
+    //亚马逊平台编译
+    amazonDebugCompile //Debug模式
+    amazonReleaseCompile //Release模式
+
+    //uptodown平台编译
+    uptodownDebugCompile //Debug模式
+    uptodownReleaseCompile //Release模式
+
+    //OPPO平台编译
+    oppoDebugCompile //Debug模式
+    oppoReleaseCompile //Release模式
+
+    //腾讯应用宝平台编译
+    tencentDebugCompile //Debug模式
+    tencentReleaseCompile //Release模式
+
+    //无广告平台编译
+    noAdDebugCompile //Debug模式
+    noAdReleaseCompile //Release模式
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url "http://mvn.com.example.liusheng.painboard.leancloud.cn/nexus/content/repositories/public"
+        }
+    }
+}
+
+dependencies {
+    //百度小米
+    baiduDebugCompile project(":CommonLibrarys:ad:ad-adapter-xiaomi-impl")
+    baiduReleaseCompile project(":CommonLibrarys:ad:ad-adapter-xiaomi-impl")
+    //百度推啊
+    baiduReleaseCompile project(":CommonLibrarys:ad:ad-adapter-tuia-impl")
+    baiduDebugCompile project(":CommonLibrarys:ad:ad-adapter-tuia-impl")
+    //    //百度oppo
+    //    baiduDebugCompile project(":CommonLibrarys:ad:ad-adapter-oppo-impl")
+    //    baiduReleaseCompile project(":CommonLibrarys:ad:ad-adapter-oppo-impl")
+    //百度tencent
+    baiduDebugCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    baiduReleaseCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    //admob和facebook广告暂时不能同时使用
+    googlePlayDebugCompile project(":CommonLibrarys:ad:ad-adapter-admob-impl")
+    googlePlayReleaseCompile project(":CommonLibrarys:ad:ad-adapter-admob-impl")
+    tencentDebugCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    tencentReleaseCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    tencentDebugCompile project(":CommonLibrarys:ad:ad-adapter-xiaomi-impl")
+    tencentReleaseCompile project(":CommonLibrarys:ad:ad-adapter-xiaomi-impl")
+    xiaomiDebugCompile project(":CommonLibrarys:ad:ad-adapter-xiaomi-impl")
+    xiaomiReleaseCompile project(":CommonLibrarys:ad:ad-adapter-xiaomi-impl")
+    xiaomiDebugCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    xiaomiReleaseCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    //    xiaomiDebugCompile project(":CommonLibrarys:ad:ad-adapter-tuia-impl")
+    //    xiaomiReleaseCompile project(":CommonLibrarys:ad:ad-adapter-tuia-impl")
+    vivoDebugCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    vivoReleaseCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    oppoDebugCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    oppoReleaseCompile project(":CommonLibrarys:ad:ad-adapter-tencent-impl")
+    amazonDebugCompile project(":CommonLibrarys:ad:ad-adapter-facebook-impl")
+    amazonReleaseCompile project(":CommonLibrarys:ad:ad-adapter-facebook-impl")
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.github.chrisbanes:PhotoView:2.1.4'
+    //compile 'com.pixplicity.sharp:library:1.1.0'//加载SVG
+    compile project(':CommonLibrarys:common')
+    //    compile project(':rb_common')
+    //compile project(':TuiAAdsCommon')
+    //    compile project(':baidumta')
+}
+
+
+apply plugin: 'com.google.gms.google-services'
